@@ -1,15 +1,22 @@
 package my.patterns;
 
-import my.patterns.bridge.*;
+import my.patterns.composite.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        Color red = new RedColor();
-        Color green = new GreenColor();
-        Shape triangle = new Triangle(red);
-        Shape circle = new Circle(green);
-        triangle.getColor();
-        circle.getColor();
+        Order pepsi = new Pepsi(20d);
+        Order pizza = new Pizza(65d);
+        Order plate = new Plate(10d);
+        CompositeOrder compositeMain = new CompositeOrder("Main");
+        CompositeOrder compositeChild = new CompositeOrder("Child");
+        compositeMain.add(pepsi);
+        compositeMain.add(pizza);
+        compositeMain.add(compositeChild);
+        compositeChild.add(pizza);
+        compositeChild.add(plate);
+        compositeChild.remove(pizza);
+        System.out.println(compositeChild.getPrice());
+        compositeMain.printOrderName();
     }
 }

@@ -5,3 +5,4 @@ Currently this repository contains the following patterns:
 - Singleton
 - Adapter
 - Bridge
+- Composite
