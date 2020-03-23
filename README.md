@@ -6,3 +6,4 @@ Currently this repository contains the following patterns:
 - Adapter
 - Bridge
 - Composite
+- Decorator
