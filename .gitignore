@@ -72,6 +72,8 @@ nb-configuration.xml
 
 ##############################
 ## OS X
+github
+github.pub
 ##############################
 .DS_Store
 
