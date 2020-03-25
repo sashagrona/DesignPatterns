@@ -7,3 +7,4 @@ Currently this repository contains the following patterns:
 - Bridge
 - Composite
 - Decorator
+- Facade
