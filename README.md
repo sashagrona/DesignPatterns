@@ -8,3 +8,4 @@ Currently this repository contains the following patterns:
 - Composite
 - Decorator
 - Facade
+- Proxy
