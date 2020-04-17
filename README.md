@@ -9,3 +9,4 @@ Currently this repository contains the following patterns:
 - Decorator
 - Facade
 - Proxy
+- Chain of responsibility
