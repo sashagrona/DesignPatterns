@@ -11,4 +11,4 @@ Currently this repository contains the following patterns:
 - Proxy
 - Chain of responsibility
 - Command
-
+- Iterator
