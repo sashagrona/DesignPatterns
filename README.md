@@ -10,3 +10,5 @@ Currently this repository contains the following patterns:
 - Facade
 - Proxy
 - Chain of responsibility
+- Command
+
