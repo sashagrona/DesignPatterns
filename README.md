@@ -12,3 +12,4 @@ Currently this repository contains the following patterns:
 - Chain of responsibility
 - Command
 - Iterator
+- Observer
