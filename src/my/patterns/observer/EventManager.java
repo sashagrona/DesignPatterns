@@ -26,6 +26,7 @@ public class EventManager {
         list.remove(user);
         map.put(operation, list);
     }
+
     public void notify(String operation, File file){
         List<EventListener> list = map.get(operation);
         for (EventListener user: list){

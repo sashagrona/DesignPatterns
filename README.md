@@ -13,3 +13,4 @@ Currently this repository contains the following patterns:
 - Command
 - Iterator
 - Observer
+- Template
