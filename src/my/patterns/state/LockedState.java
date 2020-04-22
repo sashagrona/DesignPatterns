@@ -1,7 +1,5 @@
 package my.patterns.state;
 
-import java.util.Stack;
-
 public class LockedState extends State {
     public LockedState(Player player) {
         super(player);

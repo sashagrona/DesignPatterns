@@ -17,6 +17,24 @@ public class Player {
         this.playlist.add("Nothing Else Matters");
         this.playlist.add("Snuff");
     }
+    public String startPlaying(){
+        return "Now playing: " + playlist.get(currentSong);
+    }
+    public String nextSong(){
+        currentSong++;
+        if (currentSong > playlist.size()-1){
+            currentSong = 0;
+        }
+        return startPlaying();
+    }
+
+    public String previousSong(){
+        currentSong--;
+        if (currentSong < 0){
+            currentSong = playlist.size() -1;
+        }
+        return startPlaying();
+    }
 
     public State getState() {
         return state;

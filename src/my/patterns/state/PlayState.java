@@ -1,20 +1,20 @@
 package my.patterns.state;
 
-public class ReadyState extends State {
-    public ReadyState(Player player) {
+public class PlayState extends State {
+    public PlayState(Player player) {
         super(player);
     }
 
     @Override
     public String onLock() {
         player.changeState(new LockedState(player));
-        return "Locked";
+        return "Stop playing";
     }
 
     @Override
     public String onPlay() {
-        player.changeState(new PlayState(player));
-        return null;
+        player.changeState(new ReadyState(player));
+        return "Paused";
     }
 
     @Override

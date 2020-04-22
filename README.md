@@ -14,3 +14,4 @@ Currently this repository contains the following patterns:
 - Iterator
 - Observer
 - Template
+- State
