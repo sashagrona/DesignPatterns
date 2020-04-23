@@ -4,9 +4,8 @@ import java.util.Arrays;
 
 public class QuickSortStrategy implements SortStrategy {
     @Override
-    public void doSort(int[] array) {
-        quickSort(array, 0, array.length-1);
-        System.out.println(Arrays.toString(array));
+    public int[] doSort(int[] array) {
+       return quickSort(array, 0, array.length-1);
     }
 
     public int [] quickSort(int [] array, int startIndex, int endIndex){

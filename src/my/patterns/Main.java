@@ -1,15 +1,15 @@
 package my.patterns;
 
-import my.patterns.strategy.QuickSortStrategy;
+import my.patterns.strategy.InsertionSortStrategy;
+import my.patterns.strategy.MergeSortStrategy;
 import my.patterns.strategy.SortStrategy;
-import my.patterns.template.Facebook;
-import my.patterns.template.LinkedIn;
-import my.patterns.template.SocialNetwork;
+
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        SortStrategy strategy = new QuickSortStrategy();
-        strategy.doSort(new int[]{56,2,45,21,2,-44,0,53,1,6});
+        SortStrategy strategy = new InsertionSortStrategy();
+        System.out.println(Arrays.toString(strategy.doSort(new int[]{56,2,45,21,2,-44,0,53,1,6})));
     }
 }
