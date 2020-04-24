@@ -1,7 +1,10 @@
 package my.patterns;
 
+import my.patterns.mediator.Consumer;
+import my.patterns.mediator.Mediator;
+import my.patterns.mediator.MediatorImpl;
+import my.patterns.mediator.Producer;
 import my.patterns.strategy.InsertionSortStrategy;
-import my.patterns.strategy.MergeSortStrategy;
 import my.patterns.strategy.SortStrategy;
 
 import java.util.Arrays;
@@ -9,7 +12,24 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        SortStrategy strategy = new InsertionSortStrategy();
-        System.out.println(Arrays.toString(strategy.doSort(new int[]{56,2,45,21,2,-44,0,53,1,6})));
+        Mediator mediator = new MediatorImpl();
+        Thread prod = new Thread(new Producer(mediator, 5));
+        Thread cons = new Thread(new Consumer(mediator));
+        prod.start();
+        cons.start();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

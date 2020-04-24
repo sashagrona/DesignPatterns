@@ -15,3 +15,4 @@ Currently this repository contains the following patterns:
 - Observer
 - Template
 - State
+- Mediator
