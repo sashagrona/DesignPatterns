@@ -16,3 +16,4 @@ Currently this repository contains the following patterns:
 - Template
 - State
 - Mediator
+- Memento
