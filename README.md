@@ -17,3 +17,4 @@ Currently this repository contains the following patterns:
 - State
 - Mediator
 - Memento
+- Visitor
